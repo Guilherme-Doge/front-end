@@ -1,0 +1,33 @@
+.layout {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas:
+    "header header"
+    "sidebar main"
+    "footer footer";
+}
+
+.header {
+  grid-area: header;
+  background-color: aqua;
+  padding: 3rem;
+}
+
+.main {
+  grid-area: main;
+  background-color: aquamarine;
+  padding: 3rem;
+}
+
+.footer {
+  grid-area: footer;
+  background-color: blanchedalmond;
+  padding: 3rem;
+}
+
+.sidebar {
+    grid-area: sidebar;
+    background-color: blueviolet;
+    padding: 3rem;
+}

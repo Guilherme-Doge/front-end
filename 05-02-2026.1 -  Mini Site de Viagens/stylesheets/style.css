@@ -1,0 +1,80 @@
+* {
+    margin-left: 0px;
+}
+
+body {
+    background-color: #f0f0f0;
+}
+
+.link_pais {
+    display: block;
+    color: #ffffffd5;
+    font-family: "Chelsea Market", system-ui;
+    font-weight: 600;
+    text-decoration: none;
+    background-color: rgb(52, 83, 45);
+    margin-top: 10px;
+    border: 8px solid rgb(52, 83, 45);
+    text-align: center;
+    border-radius: 50px;
+    padding: 8px;
+    margin-right: 1rem;
+    margin-left: 1rem;
+}
+
+.link_pais:hover {
+    transition: ease-in 0.15s;
+    background-color: rgb(87, 131, 77);
+    border-color: rgb(87, 131, 77);
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+footer {
+    margin-top: 160px;
+    font-size: 0.75rem;
+    background-color: #363636;
+    color: #ffffffd5;
+    border: 10px solid #363636;
+    font-style: italic;
+}
+
+li {
+    list-style-type: none;
+    margin-right: 1680px;
+}
+
+h1 {
+    color: #252525;
+}
+
+.titulo {
+    display: block;
+    text-align: center;
+}
+
+p {
+    font-family: "Chelsea Market", system-ui;
+    text-decoration: none;
+    margin-left: 12px;
+    text-align: justify;
+}
+
+.link_texto {
+    text-decoration: none;
+    color: #090909;
+}
+
+.link_texto:hover {
+    text-decoration: underline;
+}
+
+.voltar, .veja_mais {
+    margin: 12px;
+    color: #090909;
+    text-decoration: none;
+}
+
+.voltar:hover, .veja_mais:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Fugaz One", sans-serif;
+}
+
+#content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+#weight-training, #free-trial, #cardio-workout, #training-programs, #fitness, #agility-training, #goal-setting, #get-started  {
+    padding: 10%;
+}
+
+#weight-training {
+    background-color: #000000;
+    color: #f9f9f9;
+}
+
+#weight-training i {
+    color: #0a71ef;
+    margin-bottom: 10%;
+}
+
+#free-trial {
+    background-color: #e90404;
+}
+
+#cardio-workout i {
+    color: #ad22ad;
+    margin-bottom: 10%;
+}
+
+#training-programs {
+    background-color: rgb(26, 7, 231);
+    color: white;
+}
+
+#fitness {
+    grid-row: 2 / 3;
+    grid-column: 2 / 4;
+    background-color: #e90404;
+    color: white;
+    padding: 10% 20%;
+}
+
+h1 {
+    font-size: 5rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+#book-session {
+    grid-row: 2 / 4;
+    grid-column: 4 / 4;
+    background-color: #000000;
+    color: white;
+    padding-top: 10%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+}
+
+#book-session input, textarea {
+    border: solid white 2px;
+    border-radius: 1rem;
+}
+
+#book-session label {
+    margin-top: 2rem;
+}
+
+#form-btn {
+    background-color: red;
+    margin-top: 2rem;
+    margin-left: 85%;
+    padding: 0.25rem 0.5rem;
+    color: white;
+    border: solid 1px black;
+    cursor: pointer;
+}
+
+#form-btn:hover {
+    background-color: #b50000;
+}
+
+#agility-training {
+    grid-row: 2 / 4;
+    grid-column: 1 / 1;
+    background-image: url(../assets/images/agility-training.jpg);
+    background-size: 100% 100%;
+    color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#goal-setting {
+    background-color: #000000;
+}
+
+#goal-setting h2 {
+    color: white;
+}
+
+#goal-setting p {
+    color: rgb(223, 223, 20);
+    text-align: right;
+}
+
+#get-started {
+    background-image: url(../assets/images/get_started.jpg);
+    background-size: 100% 100%;
+    color: white;
+}

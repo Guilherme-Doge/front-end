@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sabor & Arte</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    
+</head>
+<body>
+    <header class="container">
+        <div id="logo"><h1 class="logo">Sabor & Arte</h1></div>
+        <nav id="main-menu">
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="#">Cardápio</a></li>
+                <li><a href="./about_us.html">Sobre Nós</a></li>
+                <li><a href="#">Contato</a></li>
+                <li id="booking-button"><a href="#">Reserva</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="hero">
+            <div class="overlay">
+                <div id="hero-content" class="container">
+                    <h2>Uma experiência<br>gastronômica<br>inesquecível</h2>
+                    <p>Descubra o equilíbrio perfeito entre sabores tradicionais e <br>inovação culinária
+                        em um ambiente acolhedor e sofisticado.</p>
+                    <div id="hero-buttons">
+                        <a href="#" id="menu-btn">Ver Cardápio</a>
+                        <a href="#" id="book-table-btn">Reservar Mesa</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="principal-content" class="container">
+            <section id="products">
+                <div class="section-title">
+                    <h2>Pratos em Destaque</h2>
+                    <p>Nossa seleção especial de pratos preparados com ingredientes frescos 
+                        e técnicas refinadas para proporcionar uma experiência gastronômica 
+                        única.</p>
+                </div>
+                <div id="products-items">
+                    <div class="product-card">
+                        <img src="./assets/images/index/Risoto_Funghi.jpg" alt="Risoto funghi dentro de um prato fundo">
+                        <div class="product-content">
+                            <div class="product-header">
+                                <h3 class="product-title">Risoto Funghi</h3>
+                                <p class="product-price">R$ 68,00</p>
+                            </div>
+                            <p class="product-description">Arroz arbóreo cremoso com mix de cogumelos frescos, 
+                                finalizado com manteiga de ervas e parmesão envelhecido</p>
+                            <p class="see-more-button">Ver mais<i class="fa-solid fa-arrow-right fa-2xs"></i></p>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <img src="./assets/images/index/Robalo_Grelhado.jpg" alt="Robalo grelhado com ervas">
+                        <div class="product-content">
+                            <div class="product-header">
+                                <h3 class="product-title">Robalo Grelhado</h3>
+                                <p class="product-price">R$ 85,00</p>
+                            </div>
+                            <p class="product-description">Filé de robalo grelhado servido sobre purê de batata-doce,
+                                legumes da estação e molho de limão siciliano.</p>
+                            <p class="see-more-button">Ver mais<i class="fa-solid fa-arrow-right fa-2xs"></i></p>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <img src="./assets/images/index/File_Mignon.jpg" alt="Filé Mignon em prato com purê">
+                        <div class="product-content">
+                            <div class="product-header">
+                                <h3 class="product-title">Filé Mignon ao Molho de Vinho</h3>
+                                <p class="product-price">R$ 92,00</p>
+                            </div>
+                            <p class="product-description">Medalhão de filé mignon grelhado ao ponto, acompanhado de risoto de parmesão e molho reduzido de vinho tinto.</p>
+                            <p class="see-more-button">Ver mais<i class="fa-solid fa-arrow-right fa-2xs"></i></p>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <img src="./assets/images/index/Ravioli_Queijo_Cabra.jpg" alt="Raviolis de Queijo de Cabra servido em prato">
+                        <div class="product-content">
+                            <div class="product-header">
+                                <h3 class="product-title">Ravioli de Queijo de Cabra</h3>
+                                <p class="product-price">R$ 72,00</p>
+                            </div>
+                            <p class="product-description">Massa fresca recheada com queijo de cabra e espinafre, servida com molho de manteiga e sálvia e nozes tostadas.</p>
+                            <p class="see-more-button">Ver mais<i class="fa-solid fa-arrow-right fa-2xs"></i></p>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <img src="./assets/images/index/Trilogia_Chocolate.jpg" alt="Fatia de torta de chocolate com morango no topo">
+                        <div class="product-content">
+                            <div class="product-header">
+                                <h3 class="product-title">Trilogia de Chocolate</h3>
+                                <p class="product-price">R$ 38,00</p>
+                            </div>
+                            <p class="product-description">Três texturas de chocolate: mousse aerada, ganache aveludada e brownie macio, acompanhado de calda de frutas vermelhas.</p>
+                            <p class="see-more-button">Ver mais<i class="fa-solid fa-arrow-right fa-2xs"></i></p>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <img src="./assets/images/index/Tiramisu_Tradicional.jpg" alt="Fatia quadradad de Tiamisù">
+                        <div class="product-content">
+                            <div class="product-header">
+                                <h3 class="product-title">Tiramisù Tradicional</h3>
+                                <p class="product-price">R$ 32,00</p>
+                            </div>
+                            <p class="product-description">Sobremesa italiana clássica com camadas de biscoito champagne embebido em café, creme de mascarpone e cacau em pó.</p>
+                            <p class="see-more-button">Ver mais<i class="fa-solid fa-arrow-right fa-2xs"></i></p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <aside id="sidebar">
+                <section class="sidebar-card">
+                    <h3 class="sidebar-title">Nossa Culinária</h3>
+                    <div class="video">
+                        <iframe 
+                        src="https://www.youtube.com/embed/G7E9dxA3pTg?si=VhclMmRShBS7F0FS" 
+                        title="YouTube video player" frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <p>Conheça mais sobre as técnicas e ingredientes que utilizamos para criar pratos excepcionais.</p>
+                </section>
+                <section class="sidebar-card">
+                    <h3 class="sidebar-title">Horário de Funcionamento</h3>
+                    <div class="hours-card">
+                        <div class="hour-item">
+                            <p class="hour-day">Segunda - Quinta: </p>
+                            <p class="hour-time">12:00h - 23:00h </p>
+                        </div>
+                        <div class="hour-item">
+                            <p class="hour-day">Sexta - Sábado: </p>
+                            <p class="hour-time">12:00h - 00:00h </p>
+                        </div>
+                        <div class="hour-item">
+                            <p class="hour-day">Domingo: </p>
+                            <p class="hour-time">12:00h - 22:00h </p>
+                        </div>
+                    </div>
+                </section>
+                <section class="sidebar-card">
+                    <h3 class="sidebar-title">Reserva de Mesas</h3>
+                    <form action="#" method="post" id="booking-form">
+                        <div class="form-field">
+                            <label for="name">Nome:</label>
+                            <input type="text" id="name" name="name" placeholder="Seu nome completo" required>
+                        </div>
+                        <div class="form-field">
+                            <label for="email">E-Mail:</label>
+                            <input type="email" id="email" name="email" placeholder="seu@email.com" required>
+                        </div>
+                        <div class="form-field">
+                            <label for="date">Data: </label>
+                            <input type="date" id="date" name="date" required>
+                        </div>
+                        <div class="form-field">
+                            <label for="time">Horário:</label>
+                            <input type="time" id="time" name="time" required>
+                        </div>
+                        <div class="form-field">
+                            <label for="number-people">Número de Pessoas</label>
+                            <input type="number" id="number-people" name="number-people" placeholder="2" required>
+                        </div>
+                        <div class="form-field">
+                            <label for="observations">Observações</label>
+                            <textarea rows="3" id="observations" name="observations" placeholder="Informações adicionais"></textarea>
+                        </div>
+                    </form>
+                    <button id="form-btn" type="submit" form="booking-form" value="submit">Enviar</button>
+                </section>
+            </aside>
+        </section>
+        <section id="testimonials">
+            <div class="section-title">
+                <h2>O Que Nossos Clientes Dizem</h2>
+                <p>Experiências compartilhadas por quem já desfrutou de nossos pratos e ambiente.</p>
+            </div>
+            <div id="testimonials-box" class="container">
+                <div class="testimonial-card">
+                    <img src="./assets/images/index/5_Stars.png" alt="Five stars for rating">
+                    <p>"Uma experiência gastronômica incrível! O Risotto de Funghi é simplesmente divino e o atendimento foi impecável. Certamente voltarei mais vezes."</p>
+                    <div class="testimonial-person">
+                        <img src="./assets/images/index/Profile-Avatar.png" alt="Ícone de perfil" class="profile-avatar">
+                        <div>
+                            <h3 class="testimonial-name">Mariana Oliveira</h3>
+                            <h4 class="testimonial-date">Visitou em Maio 2025</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <img src="./assets/images/index/5_Stars.png" alt="Five stars for rating">
+                    <p>"O ambiente é sofisticado mas aconchegante. Experimentei o Filé Mignon ao Molho de Vinho e foi uma das melhores carnes que já provei. 
+                        A carta de vinhos também é excelente."</p>
+                    <div class="testimonial-person">
+                        <img src="./assets/images/index/Profile-Avatar.png" alt="Ícone de perfil" class="profile-avatar">
+                        <div>
+                            <h3 class="testimonial-name">Ricardo </h3>
+                            <h4 class="testimonial-date">Visitou em Abril 2025</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <img src="./assets/images/index/5_Stars.png" alt="Five stars for rating">
+                    <p>"As sobremesas são um capítulo à parte! A Trilogia de Chocolate é de outro mundo. Vale cada centavo. 
+                        Recomendo para ocasiões especiais ou para quem quer ter uma experiência gastronômica memorável."</p>
+                    <div class="testimonial-person">
+                        <img src="./assets/images/index/Profile-Avatar.png" alt="Ícone de perfil" class="profile-avatar">
+                        <div>
+                            <h3 class="testimonial-name">Fernanda Almeida</h3>
+                            <h4 class="testimonial-date">Visitou em Maio 2025</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="newsletter">
+            <div class="section-title">
+                <h2>Fique por Dentro das Novidades</h2>
+                <p>Inscreva-se para receber nossas promoções especiais, eventos gastronômicos e novidades do cardápio.</p>
+                <div id="newsletter-box">
+                    <form id="newsletter-form" action="#" method="post">
+                        <input type="email" id="email-newsletter" name="email-newsletter" placeholder="Seu melhor e-mail" required>
+                    </form>
+                    <button id="newsletter-btn" type="submit" form="newsletter-form" value="submit">Inscreva-se</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <section id="main-footer" class="container">
+            <section id="footer-about">
+                <h2 class="logo">Sabor & Arte</h2>
+                <p id="footer-description">Experiências gastronômicas inesquecíveis em um ambiente sofisticado e acolhedor</p>
+                <div id="about-social-icons">
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-whatsapp"></i>
+                    <i class="fa-brands fa-x-twitter"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+            </section>
+            <section id="footer-links">
+                <h4 class="footer-titles">Links Rápidos</h4>
+                <nav id="footer-menu">
+                    <ul>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="#">Cardápio</a></li>
+                        <li><a href="./about_us.html">Sobre Nós</a></li>
+                        <li><a href="#">Contato</a></li>
+                        <li><a href="#">Reserva</a></li>
+                    </ul>
+                </nav>
+            </section>
+            <section id="footer-hours">
+                <h4 class="footer-titles">Horário de Funcionamento</h4>
+                <div class="hours-card">
+                    <div class="hour-item">
+                        <p class="hour-day">Segunda - Quinta: </p>
+                        <p class="hour-time">12:00h - 23:00h </p>
+                    </div>
+                    <div class="hour-item">
+                        <p class="hour-day">Sexta - Sábado: </p>
+                        <p class="hour-time">12:00h - 00:00h </p>
+                    </div>
+                    <div class="hour-item">
+                        <p class="hour-day">Domingo: </p>
+                        <p class="hour-time">12:00h - 22:00h </p>
+                    </div>
+                </div>
+            </section>
+            <section id="footer-contact">
+                <h4 class="footer-titles">Contato</h4>
+                <div class="footer-contacts">
+                    <div class="footer-contact-item">
+                        <i class="fa-solid fa-map-pin"></i>
+                        <p class="">Av. Paulista, 1578, Bela Vista, São Paulo - SP, 01310-200</p>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="fa-solid fa-phone"></i>
+                        <p>(11) 3456-7890</p>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="fa-solid fa-envelope"></i>
+                        <a href="mailto:contato@saborarte.com.br">contato@saborarte.com.br</a>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <section id="copyrights">
+            <p id="copyright-text">© 2025 Sabor & Arte. Todos os direitos reservados</p>
+        </section>
+    </footer>
+</body>
+</html>

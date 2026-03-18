@@ -1,0 +1,55 @@
+.tituloMedicinais {
+    color: green;
+}
+
+.tituloOrnamentais {
+    color: purple;
+}
+
+h2 {
+    color: darkorange;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+a {
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+p {
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h1 {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h2 a {
+    color: darkorange;
+}
+
+.botao {
+    background-color: orangered;
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    border: 2px solid orangered;
+}
+
+.botao:focus {
+    background-color: blue;
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    border: 2px solid orangered;
+}
+
+.botao:visited {
+    background-color: green;
+}
+
+.botao:hover {
+    background-color: white;
+    color: red;
+}

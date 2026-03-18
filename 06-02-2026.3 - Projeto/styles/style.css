@@ -1,0 +1,420 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Outfit:wght@100..900&family=Pacifico&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+body {
+    font-family: "Outfit", "sans-serif";
+}
+
+.container {
+    width: 95%;
+    margin: 0 auto;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 0;
+}
+
+.logo {
+    font-family: "Pacifico", cursive;
+}
+
+h1 {
+    color: #333;
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20rem 0;
+}
+
+#main-menu ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    align-items: center;;
+}
+
+#main-menu a {
+    color: #333;
+    font-size: 1.25rem;;
+}
+
+#booking-button {
+    background-color: #333;
+    padding: 0.5rem 1rem;
+    border-radius: 3rem;
+}
+
+#booking-button a {
+    color: #fafafa;
+}
+
+#booking-button:hover {
+    background-color: #666;;
+    transition-duration: 0.25s;
+}
+
+#hero {
+    background-image: url(../assets/images/index/Background_Hero.jpg);
+    background-position: center;
+    color: #fafafa;
+}
+
+#hero-content h2 {
+    font-family: "DM Serif Display", serif;
+    font-size: 3rem;
+    font-weight: 500;
+    line-height: 1.05;
+}
+
+#hero-content p {
+    font-size: 1.25rem;
+    margin-top: 2rem;
+}
+
+#hero-buttons {
+    display: flex;
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+#hero-buttons a {
+    color: #fafafa;
+}
+
+#menu-btn {
+    padding: 1rem 2rem;
+}
+
+#book-table-btn {
+    padding: 1rem 2rem;
+    border-style: solid;
+    border-radius: 0.5rem;
+}
+
+#principal-content {
+    display: flex;
+    gap: 3rem;
+    margin: 5rem auto;
+}
+
+#products {
+    flex: 3;
+}
+
+#sidebar {
+    flex: 1;
+}
+
+#products-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem
+}
+
+.product-card {
+    width: 35%;
+    flex-grow: 1;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 6px 6px 6px #ccc;
+    background-color: #f9f9f9;
+}
+
+.product-card img {
+    width: 100%;
+    height: 70%;
+}
+
+.section-title {
+    margin: 0 auto;
+    text-align: center;
+    max-width: 60%;
+}
+
+.section-title h2 {
+    font-family: "DM Serif Display", serif;
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 0.5rem;
+}
+
+.section-title p {
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+}
+
+.product-content {
+    margin: 1rem 1rem 2rem 1rem ;
+}
+
+.product-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.product-title {
+    font-family: "DM Serif Display", serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+.product-price {
+    font-weight: 600;
+    font-size: 1.25rem;
+}
+
+.product-description, .sidebar-card p  {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #666;
+    margin: 0.75rem 0;
+}
+
+.see-more-button {
+    font-size: 1.125rem;
+    color: #333;
+}
+
+.fa-right-arrow {
+    color: #333;
+}
+
+.sidebar-card {
+    box-shadow: 6px 6px 6px #ccc;
+    background-color: #f9f9f9;
+    border-radius: 1rem;
+    padding: 1rem;
+    margin-bottom: 2rem;
+}
+
+.sidebar-title {
+    font-family: "DM Serif Display", serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+
+.video {
+    border-radius: 1rem;
+    overflow: hidden;
+    width: 100;
+    max-width: 600px;
+}
+
+.video iframe {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    height: auto;
+}
+
+.hour-item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hour-time {
+    font-weight: 600 !important;
+}
+
+.form-field {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+#booking-form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+input, textarea {
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    color: #666;
+    border: #666 solid 1px;
+}
+
+#form-btn, #newsletter-btn {
+    background-color: #333;
+    padding: 1rem 2rem;
+    border-radius: 3rem;
+    color: #fcfcfc;
+    border: 0;
+    cursor: pointer;
+}
+
+
+#form-btn:hover, #newsletter-btn:hover {
+    background-color: #666;;
+    transition-duration: 0.25s;
+    border: 0;
+}
+
+#testimonials {
+    background-color: #f9f9f9;
+    padding: 5rem 0;
+}
+
+#testimonials-box {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.testimonial-card {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    background-color: #fcfcfc;
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: 6px 6px 6px #ccc;
+    flex: 1;
+}
+
+.testimonial-person {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.testimonial-card img {
+    max-width: 100px;
+}
+
+#newsletter {
+    padding: 4rem 0;
+}
+
+#newsletter-box {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    align-items: center;
+}
+
+footer {
+    background-color: #112;
+    padding: 4rem;
+    color: #f9f9f9;
+}
+
+#main-footer {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+#footer-about {
+    flex: 1;
+}
+
+#footer-about h2 {
+    font-weight: 400;
+    margin-bottom: 0.5rem;
+}
+
+#footer-description {
+    margin-bottom: 2rem;
+    color: #ccc;
+    max-width: 70%;
+}
+
+#about-social-icons {
+    display: flex;
+    gap: 1rem;
+}
+
+#about-social-icons i {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 10rem;
+    padding: 0.5rem;
+    background-color: #666;
+}
+
+#footer-links {
+    flex: 1;
+}
+
+#footer-hours  {
+    flex: 1;
+}
+
+#footer-hours .hours-card{
+    max-width: 80%;
+    color: #ccc;
+}
+
+.hours-card {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+#footer-contact {
+    flex: 1;
+}
+
+.footer-contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.footer-contact-item {
+    display: flex;
+    justify-content: flex-start;
+    gap: 1rem;
+    align-items: center;
+    color: #ccc;
+}
+
+.footer-contact-item a {
+    color: #ccc;
+}
+
+.footer-titles {
+    margin-bottom: 1rem;
+    font-family: "DM Serif Display", serif;  
+    font-weight: 500;
+}
+
+#footer-menu ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+#footer-menu ul li a{
+    color: #ccc;
+}
+
+#copyrights {
+    margin-top: 2rem;
+    text-align: center;
+    color: #ccc;
+}
