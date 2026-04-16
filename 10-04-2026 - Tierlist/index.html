@@ -1,72 +1,65 @@
 <!DOCTYPE html>
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <script src="./assets/vendor/sortablejs/Sortable.min.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tierlist Maker</title>
+
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sortablejs@latest/Sortable.min.js"></script>
+
+  <style>
+    .drag-selected {
+      outline: 2px solid white;
+    }
+
+    .drag-ghost {
+      opacity: 0.4;
+    }
+
+    .drag-moving {
+      transform: scale(1.05);
+    }
+  </style>
 </head>
+
 <body class="p-5 bg-slate-900 text-white">
-    <div class="max-w-4xl mx-auto">
-        <div class="flex justify-center mb-6">
-            <h1 class="text-3xl font-bold tracking-tight">Tierlist Maker</h1>
+  <div class="max-w-5xl mx-auto">
+    <h1 class="text-3xl font-bold text-center mb-6">Tierlist Maker</h1>
+
+    <div id="tierlist" class="flex flex-col border border-slate-700 bg-slate-800">
+      <div class="flex min-h-[80px] border-b border-slate-700 tier-row" id="add-rank-row">
+        <div id="add-rank" class="w-24 flex items-center justify-center font-bold cursor-pointer border-r border-slate-700">
+          +
         </div>
-
-        <div id="tierlist" class="flex flex-col border border-slate-700 bg-slate-800">
-            
-            <div class="flex min-h-[80px] border-b border-slate-700">
-                <div class="w-24 flex items-center justify-center bg-red-500 text-slate-900 font-bold border-r border-slate-700">
-                    S
-                </div>
-                <div id="s-tier" class="flex-1 p-2 flex flex-wrap gap-2">
-                    </div>
-            </div>
-
-            <div class="flex min-h-[80px] border-b border-slate-700">
-                <div class="w-24 flex items-center justify-center bg-orange-400 text-slate-900 font-bold border-r border-slate-700">
-                    A
-                </div>
-                <div id="a-tier" class="flex-1 p-2 flex flex-wrap gap-2">
-                </div>
-            </div>
-
-            <div class="flex min-h-[80px] border-b border-slate-700">
-                <div class="w-24 flex items-center justify-center bg-yellow-400 text-slate-900 font-bold border-r border-slate-700">
-                    B
-                </div>
-                <div id="b-tier" class="flex-1 p-2 flex flex-wrap gap-2">
-                </div>
-            </div>
-
-            <div class="flex min-h-[80px] border-b border-slate-700">
-                <div class="w-24 flex items-center justify-center bg-lime-400 text-slate-900 font-bold border-r border-slate-700">
-                    C
-                </div>
-                <div id="c-tier" class="flex-1 p-2 flex flex-wrap gap-2">
-                </div>
-            </div>
-
-            <div class="flex min-h-[80px] border-b border-slate-700">
-                <div class="w-24 flex items-center justify-center bg-blue-400 text-slate-900 font-bold border-r border-slate-700">
-                    D
-                </div>
-                <div id="d-tier" class="flex-1 p-2 flex flex-wrap gap-2">
-                </div>
-            </div>
-
-            <div class="flex min-h-[80px] border-b border-slate-700">
-                <div id="add-rank" class="w-24 flex items-center justify-center text-slate-900 text-white font-bold border-r border-slate-700">
-                    +
-                </div>
-                <div class="flex-1 p-2 flex flex-wrap gap-2">
-                </div>
-            </div>
-
-        </div>
-        <div class="mt-10 p-4 border-2 border-dashed border-slate-700 rounded-lg">
-            <p class="text-sm text-slate-400 mb-3">Unranked Items</p>
-            <div id="item-bank" class="flex flex-wrap gap-2">
-            </div>
-        </div>
+        <div class="flex-1 p-2"></div>
+      </div>
     </div>
+
+    <div class="my-4">
+      <label for="image-upload" class="block mb-2 text-sm text-slate-300">
+        Upload de imagens
+      </label>
+      <input
+        type="file"
+        id="image-upload"
+        accept="image/*"
+        multiple
+        class="block w-full text-sm text-slate-400
+               file:mr-4 file:py-2 file:px-4
+               file:rounded file:border-0
+               file:text-sm file:font-semibold
+               file:bg-slate-700 file:text-white
+               hover:file:bg-slate-600"
+      />
+    </div>
+
+    <div class="mt-10 p-4 border-2 border-dashed border-slate-700 rounded-lg">
+      <p class="text-sm text-slate-400 mb-3">Unranked Items</p>
+      <div id="item-bank" class="tier-dropzone flex flex-wrap gap-2 min-h-[80px] items-start"></div>
+    </div>
+  </div>
+
+  <script src="./script.js"></script>
 </body>
+</html>
