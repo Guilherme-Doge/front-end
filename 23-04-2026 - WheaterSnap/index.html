@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>WeatherSnap ☀️</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body id="body" class="bg-gradient-to-r from-blue-400 to-blue-700 min-h-screen flex flex-col items-center justify-center text-white">
+
+    <h1 class="text-3xl font-bold mb-6">WeatherSnap ☀️</h1>
+
+    <div class="flex gap-2 mb-6">
+        <input id="cidade" type="text" placeholder="Buscar cidade..."
+        class="px-4 py-2 rounded text-black">
+        <button onclick="buscarClima()" class="bg-white text-black px-4 py-2 rounded">
+        Buscar
+        </button>
+    </div>
+
+    <div id="card" class="bg-white/20 backdrop-blur-md p-6 rounded-xl w-80 text-center hidden">
+
+        <h2 id="local" class="text-xl font-bold"></h2>
+        <p id="data"></p>
+
+        <div class="text-5xl my-4" id="temp"></div>
+        <p id="condicao"></p>
+
+        <p id="detalhes" class="text-sm mt-2"></p>
+
+        <div id="sugestao" class="mt-4 p-3 bg-white/20 rounded"></div>
+
+        <div id="previsao" class="flex justify-between mt-4"></div>
+
+    </div>
+
+    <script src="./app.js"></script>
+
+</body>
+</html>
