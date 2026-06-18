@@ -1,0 +1,26 @@
+---
+import Counter from "../components/Counter.jsx";
+
+const title = "Demo Astro";
+const items = ["Conteúdo estático", "Islands interativas", "Pouco JavaScript"];
+---
+
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+  </head>
+  <body>
+    <main>
+      <h1>{title}</h1>
+      <p>Astro renderiza a página como HTML e hidrata só o que precisa.</p>
+
+      <ul>
+        {items.map((item) => <li>{item}</li>)}
+      </ul>
+
+      <Counter client:load />
+    </main>
+  </body>
+</html>
