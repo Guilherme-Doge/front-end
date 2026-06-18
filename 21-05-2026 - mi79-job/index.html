@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechRecruit // Candidate Finder</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@500&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="page-lista"> <nav class="nav-bar">
+        <div class="container nav-container">
+            <div class="logo">TECHRECRUIT <span class="mono-eyebrow">// CANDIDATE FINDER</span></div>
+            <div class="nav-links"><span class="mono-eyebrow">v1.0.4</span></div>
+        </div>
+    </nav>
+
+    <header class="hero-band-dark">
+        <div class="container hero-container">
+            <div class="hero-left">
+                <span class="mono-eyebrow">OPEN POSITIONS</span>
+                <h1 class="display-xxl">Build your next team with senior talent.</h1>
+                <p class="body-lg">Filtragem de alta performance e análise de dados integrada para recrutadores técnicos.</p>
+            </div>
+            <div class="hero-right">
+                <div class="brand-gradient-ribbon"></div>
+            </div>
+        </div>
+    </header>
+
+    <main class="canvas-light">
+        <div class="container section-padding">
+            <section id="lista-section">
+                <span class="mono-eyebrow section-title">FILTER CANDIDATES</span>
+                
+                <div class="toolbar">
+                    <input type="text" id="search-input" class="text-input" placeholder="BUSCAR POR NOME OU PAÍS...">
+                    
+                    <select id="sort-select" class="button-outline">
+                        <option value="">ORDENAR POR IDADE</option>
+                        <option value="asc">MAIS JOVENS</option>
+                        <option value="desc">MAIS EXPERIENTES</option>
+                    </select>
+                </div>
+
+                <div id="loading" class="mono-eyebrow" style="text-align: center; padding: 40px;">LOADING CANDIDATES...</div>
+                
+                <div id="candidates-grid" class="grid-3up">
+
+                    <a href="candidato.html?nome=John%20Doe&idade=30&foto=https://randomuser.me/api/portraits/men/1.jpg&pais=Brazil&cidade=Sao%20Paulo&email=john.doe@example.com&telefone=1199999999" class="testimonial-card">
+                        <div>
+                            <div class="card-top">
+                                <img src="https://randomuser.me/api/portraits/men/1.jpg" alt="Foto Mockup">
+                                <div>
+                                    <h3 class="display-md">John Doe (Mockup)</h3>
+                                    <span class="mono-eyebrow">Brazil</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-meta">
+                            <span class="mono-eyebrow">AGE: 30 Y/O</span>
+                            <span class="mono-eyebrow" style="color: var(--primary);">VIEW PROFILE →</span>
+                        </div>
+                    </a>
+                    </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-wordmark-banner">together.ai</div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
