@@ -1,0 +1,15 @@
+.hero {
+  background: linear-gradient(45deg, #f97316, #fbbf24);
+  padding: 4rem 2rem;
+  border-radius: 2rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.title {
+  color: white;
+  font-size: 3rem;
+  font-weight: 900;
+  text-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}

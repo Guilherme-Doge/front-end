@@ -1,18 +1,32 @@
+import { Inter, Montserrat } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 
-export const metadata = {
-  title: "Menu Digital - Restaurante",
-  description: "Desenvolvido no curso de Next.js",
-};
+const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
+const montserrat = Montserrat({ subsets: ["latin"], variable: "--font-montserrat" });
 
-export default function RootLayout({ children }) {
+export default function RootLayout({ children }:
+  {
+    children: React.ReactNode
+  }
+) {
   return (
-    <html lang="pt-br">
-      <body className="bg-gray-50 antialiased">
+    <html lang="pt-br" className={`${inter.variable} ${montserrat.variable}`}>
+      <body className="font-sans bg-gray-50 antialiased">
         <Navbar />
         {children}
       </body>
     </html>
   );
 }
+
+// src/app/layout.js
+
+export const metadata = {
+  title: {
+    default: "Sabor e Arte | O Melhor Cardápio Digital",
+    template: "%s | Sabor e Arte" // O %s será substituído pelo título da página específica
+  },
+  description: "Peça os melhores pratos artesanais da região com rapidez e praticidade.",
+  keywords: ["restaurante", "cardápio digital", "comida artesanal", "delivery"],
+};

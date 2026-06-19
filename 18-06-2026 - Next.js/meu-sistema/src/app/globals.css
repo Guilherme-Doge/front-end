@@ -1,1 +1,7 @@
 @import "tailwindcss";
+
+/* Aqui você pode adicionar camadas personalizadas se necessário */
+@theme {
+  --color-brand-orange: #f97316;
+  --color-brand-green: #15803d;
+}
