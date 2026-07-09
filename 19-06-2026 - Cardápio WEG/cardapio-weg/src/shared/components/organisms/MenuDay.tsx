@@ -1,28 +1,29 @@
-import "@/app/cardapio/page"
-import { Plate } from "@/app/cardapio/page"
 import MenuCard from "../components/MenuCard"
 
-export default async function MenuDay() {
-    const response = await fetch(`https://api-restaurante-5iqb.onrender.com/api`, {
-        next: { revalidate : 60}
-    }) 
-    
-    const data = await response.json()
+export interface Plate {
+    id: string;
+    nome: string;
+    descricao: string;
+    categoria: string;
+    preco: number;
+    imagem: string;
+    destacado: boolean;
+    fixo: boolean;
+    criado_em: string;
+    atualizado_em: string;
+}
+
+export default async function MenuDay(plates : Plate[]) {
 
     return (
-        <section>
-            {data.array.forEach((info : Plate) => {
-                <MenuCard id={info.id}
-                        nome={info.nome}
-                        descricao={info.descricao}
-                        categoria={info.categoria}
-                        preco={info.preco} 
-                        imagem={info.imagem} 
-                        destacado={info.destacado} 
-                        fixo={info.fixo} 
-                        criado_em={info.criado_em} 
-                        atualizado_em={info.atualizado_em} />
-            })}
+        <section className="flex justify-around flex-col px-2 py-4">
+            {plates.length === 0 && (
+                <p className="text-center text-gray-500 py-10">Nenhum prato encontrado na API.</p>
+            )}
+
+            {plates.map((info: Plate) => (
+                <MenuCard key={info.id} {...info} />
+            ))}
         </section>
     )
 }

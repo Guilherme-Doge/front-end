@@ -1,10 +1,10 @@
-/** @type {import('next').Next.json} */
+/** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
     remotePatterns: [
       {
         protocol: 'https',
-        hostname: 'www.pngwing.com',
+        hostname: 'images.unsplash.com',
       },
     ],
   },

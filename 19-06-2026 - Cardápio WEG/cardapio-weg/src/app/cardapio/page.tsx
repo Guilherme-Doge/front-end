@@ -1,16 +1,10 @@
-export interface Plate {
-    id : string,
-    nome : string,
-    descricao : string,
-    categoria : string,
-    preco : number,
-    imagem : string,
-    destacado : boolean
-    fixo : boolean,
-    criado_em : string,
-    atualizado_em : string
-}
+import MenuDay from "@/shared/components/organisms/MenuDay"
+import consumeApiGet from "@/shared/utils/ConsumeApi"
 
-export default function cardapio() {
+export default async function CardapioPage() {
+    const plates = await consumeApiGet("");
 
+    return (
+        <MenuDay />
+    )
 }
